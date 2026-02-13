@@ -4,6 +4,9 @@ from dotenv import load_dotenv
 # Load environment variables first!
 load_dotenv()
 
+# LangSmith tracing will be automatically enabled if LANGCHAIN_TRACING_V2=true in .env
+# You can view traces at: https://smith.langchain.com
+
 from langchain_core.messages import HumanMessage
 from graph import graph
 
